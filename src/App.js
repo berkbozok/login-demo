@@ -1,10 +1,8 @@
 import './App.css';
 import './index.js';
-import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
-
-import { Component } from 'react';
-import { LoginPage, Dashboard } from './pages';
+import { LoginPage } from './pages';
 import Facebook from './components/Facebook';
 import Google from './components/Google';
 import Linkedin from './components/Linkedin';
