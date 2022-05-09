@@ -2,6 +2,7 @@ Note From Dev:
 In order to test login feature please use the following details
 
 email: admin@email.com
+
 password: admintest
 
 Only the following combination will grant you access
