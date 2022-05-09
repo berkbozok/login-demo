@@ -1,3 +1,13 @@
+Note From Dev:
+In order to test login feature please use the following details
+
+email: admin@email.com
+
+password: admintest
+
+Only the following combination will grant you access
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
