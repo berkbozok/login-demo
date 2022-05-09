@@ -1,4 +1,3 @@
-import { Navigate} from 'react-router-dom';
 
 export const validateForm = values => {
   const errors = {};
