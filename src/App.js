@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.js';
+import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 
-function App() {
+
+import { Component } from 'react';
+import { LoginPage, Dashboard } from './pages';
+import Facebook from './components/Facebook';
+import Google from './components/Google';
+import Linkedin from './components/Linkedin';
+import SuccessPage from './SuccessPage';
+
+
+const App =  () =>  {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      
+      <div>
+        {/* Routes */}
+        <Routes>
+
+          
+          <Route path="/" element={<LoginPage/>} />
+          <Route path="/success" element={<SuccessPage/>      } />
+          <Route path="/facebook" element={<Facebook />} />
+          <Route path="/google" element={<Google />} />
+          <Route path="/linkedin" element={<Linkedin />} />
+          <></>
+          
+
+        </Routes>
+
+
+      </div>
+    </Router>
   );
 }
+
 
 export default App;
